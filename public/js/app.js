@@ -7,6 +7,8 @@ const total           = document.getElementById('total');
 const moves           = document.getElementById('moves');
 const modal           = document.querySelector('.modal');
 
+const data = ['cool', 'cry', 'flushed', 'in-love', 'kiss', 'mask', 'sleeping', 'smiling', 'tired', 'tongue'];
+
 const Game = function() {
     this.start = function() {
 
@@ -126,7 +128,8 @@ const Game = function() {
     };
 
     this.init = function(player) {
-        this.emojis = ['cool', 'cry', 'flushed', 'in-love', 'kiss', 'mask', 'sleeping', 'smiling', 'tired', 'tongue', 'cool', 'cry', 'flushed', 'in-love', 'kiss', 'mask', 'sleeping', 'smiling', 'tired', 'tongue'];
+        this.emojis = data.concat(data);
+        total.textContent = data.length;
         this.player = player;
         this.player.init();
         this.shuffleEmojis();
