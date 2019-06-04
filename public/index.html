@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Find Pairs Game</title>
+</head>
+<body>
+    <div class="container box-shadow">
+        <div class="title-block">
+            <h1>Find The Pairs Game</h1>
+        </div>
+        <div id="game">
+            <div id="control-block">
+                <button class="button control-button box-shadow" id="start-game">Start Game</button>
+                <button class="button control-button box-shadow disabled" id="rest-game">Rest Game</button>
+                <div class="result">
+                    <div class="match-result">
+                        <p>Matched</p>
+                        <p><span id="matched">0</span>/10</p>
+                    </div>
+                    <div class="match-result">
+                        <p>Moves</p>
+                        <p><span id="moves">0</span></p>
+                    </div>
+                </div>
+            </div>
+            <div id="game-block">
+                <div class="elements-block">
+                    <ul class="elements-list disabled">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="winner" class="modal">
+        <div class="modal-content box-shadow">
+            <h1>You Are A Winner!</h1>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
